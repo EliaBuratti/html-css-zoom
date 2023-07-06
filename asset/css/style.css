@@ -18,6 +18,10 @@
 
 }
 
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
 a {
     text-decoration-line: none;
     color: var(--color-text);
@@ -26,8 +30,10 @@ a {
 
 footer {
     background-color: var(--bg-footer);
-    height: 6rem;
+    height: 7rem;
     width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden
 }
 
 .container {
@@ -79,12 +85,6 @@ footer {
     text-align: end;
 }
 
-
-.d-flex {
-    display: flex;
-}
-
-
 .top-function a {
     background-color: var(--bg-button);
     padding: 0.25rem;
@@ -118,7 +118,7 @@ footer {
 }
 
 .webcam {
-    height: calc(100vh - 9rem);
+    height: calc(100vh - 10rem);
     background-color: var(--bg-color);
     overflow: auto;
 }
