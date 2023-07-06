@@ -9,6 +9,8 @@
 :root {
     --color-text: white;
     --bg-button:rgb(74 74 74);
+    --bg-color:black;
+    --bg-mute:rgb(74 74 74 / 50%);
 
 }
 
@@ -19,16 +21,30 @@ a {
 }
 
 .container {
-    width: 100%;
     margin: auto;
 }
 
 .row {
     display: flex;
 }
+.col-2 {
+    width: calc(100 % 12 / 2);
+}
+
+.col-3 {
+    width: calc(100 % 12 / 3);
+}
+
+.col-6 {
+    width: calc(100 % 12 / 6);
+}
 
 .col-12 {
     width: 100%;
+}
+
+.justify-center {
+    justify-content: center;
 }
 
 
@@ -40,9 +56,48 @@ a {
     gap: 1rem;
 }
 
-.top-function {
+.top-function, .bottom-function {
     height: 3rem;
     text-align: end;
-    background-color: black;
+    background-color: var(--bg-color);
     padding-top: 0.5rem;
 }
+
+
+.user {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+}
+
+.overlay a{
+    background-color:var(--bg-mute);
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+}
+
+.webcam {
+    height: calc(100vh - 9rem);
+    background-color: var(--bg-color);
+    overflow: auto;
+}
+.webcam .row {
+    gap: 0.5rem;
+    flex-wrap: wrap;
+
+}
+
+.webcam > .container {
+    width: 90vw;
+    margin: auto;
+}
+
+
+.bottom-function {
+    
+}
+
