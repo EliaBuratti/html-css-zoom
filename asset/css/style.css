@@ -9,8 +9,12 @@
 :root {
     --color-text: white;
     --bg-button:rgb(74 74 74);
+    --bg-footer:rgb(34 34 34);
     --bg-color:black;
     --bg-mute:rgb(74 74 74 / 50%);
+    --active:rgb(75 200 0);
+    --alert: red;
+    --bg-alert:rgb(74 74 74);
 
 }
 
@@ -20,7 +24,14 @@ a {
     
 }
 
+footer {
+    background-color: var(--bg-footer);
+    height: 6rem;
+    width: 100%;
+}
+
 .container {
+    max-width: 100%;
     margin: auto;
 }
 
@@ -28,23 +39,49 @@ a {
     display: flex;
 }
 .col-2 {
-    width: calc(100 % 12 / 2);
+    width: calc(100% 12 / 2);
 }
 
 .col-3 {
-    width: calc(100 % 12 / 3);
+    width: calc(100% 12 / 3);
 }
 
 .col-6 {
-    width: calc(100 % 12 / 6);
+    width: calc(100% 12 / 6);
+}
+
+.col-8 {
+    width: calc(100% 12 / 8);
 }
 
 .col-12 {
     width: 100%;
 }
 
+.gap-1 {
+    gap: 1rem;
+}
+
 .justify-center {
     justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.left {
+    text-align: start;
+
+}
+
+.right {
+    text-align: end;
+}
+
+
+.d-flex {
+    display: flex;
 }
 
 
@@ -56,7 +93,7 @@ a {
     gap: 1rem;
 }
 
-.top-function, .bottom-function {
+.top-function {
     height: 3rem;
     text-align: end;
     background-color: var(--bg-color);
@@ -98,6 +135,35 @@ a {
 
 
 .bottom-function {
-    
+    color: var(--color-text);
+    background-color: var(--bg-button);
+    width: 100%;
+
 }
+
+.icon {
+    padding: 1rem;
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--color-text); 
+}
+
+.small {
+    font-size: 1rem;
+}
+
+.selected {
+    color: var(--active);
+}
+
+.quit {
+    background-color: var(--bg-button);
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    color: var(--alert);
+
+
+}
+
 
