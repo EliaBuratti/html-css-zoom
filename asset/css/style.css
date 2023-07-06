@@ -5,3 +5,44 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --color-text: white;
+    --bg-button:rgb(74 74 74);
+
+}
+
+a {
+    text-decoration-line: none;
+    color: var(--color-text);
+    
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+
+.top-function a {
+    background-color: var(--bg-button);
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    display: inline-block;
+    gap: 1rem;
+}
+
+.top-function {
+    height: 3rem;
+    text-align: end;
+    background-color: black;
+    padding-top: 0.5rem;
+}
