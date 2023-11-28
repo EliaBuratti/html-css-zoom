@@ -109,18 +109,22 @@ footer {
     position: absolute;
     bottom: 1rem;
     left: 0;
+
 }
 
 .overlay a{
     background-color:var(--bg-mute);
     padding: 0.5rem;
     border-radius: 0.25rem;
+    overflow: hidden;
 }
+
 
 .webcam {
     height: calc(100vh - 10rem);
     background-color: var(--bg-color);
-    overflow: auto;
+    overflow-y: auto;
+    padding: 2rem 0;
 }
 .webcam .row {
     gap: 0.5rem;
